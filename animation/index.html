@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Animation</title>
+	<style>
+		
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+			animation: animasikotak 3s ease infinite alternate forwards;
+			animation-play-state: running;
+		}
+
+		/*
+			animation :
+			[name] [duration] [timing-function]
+			[delay] [iteration-count] [direction]
+			[fill-mode] [play-state];
+		*/
+
+		@keyframes animasikotak {
+			0% {
+				width: 200px;
+
+			}
+
+			50% {
+				width: 500px;
+				height: 200px;
+			}
+
+			100% {
+				width: 500px;
+				height: 500px;
+
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<div class="kotak"></div>
+
+</body>
+</html>
